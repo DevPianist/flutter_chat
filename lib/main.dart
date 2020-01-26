@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './pages/login.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -7,26 +9,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Flutter CHAT',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Home(),
-    );
-  }
-}
-
-class Home extends StatelessWidget {
-  const Home({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Container(
-          child: Text('CHAT CON FLUTTER Y SOCKETS'),
-        ),
-      ),
+      home: Login(),
     );
   }
 }
